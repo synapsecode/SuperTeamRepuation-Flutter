@@ -91,7 +91,14 @@ class TopBar extends StatelessWidget {
           Container(
             height: 30,
             width: 30,
-            color: Colors.yellow,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage(
+                  'assets/superteam.png',
+                ),
+              ),
+            ),
           ).addHorizontalMargin(10),
           Text('superteam')
               .weight(FontWeight.bold)
